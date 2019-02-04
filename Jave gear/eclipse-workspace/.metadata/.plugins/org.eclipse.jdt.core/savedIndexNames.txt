@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/zachmeade/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+1018232679.index
+3001862862.index

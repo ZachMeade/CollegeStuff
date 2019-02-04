@@ -1,0 +1,3 @@
+/Users/zachmeade/CLionProjects/mycalculator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/zachmeade/CLionProjects/mycalculator/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/zachmeade/CLionProjects/mycalculator/cmake-build-debug/CMakeFiles/mycalculator.dir
