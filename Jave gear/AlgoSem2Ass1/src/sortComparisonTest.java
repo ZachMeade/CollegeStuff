@@ -10,41 +10,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 //-------------------------------------------------------------------------
-/**
- *  Test class for SortComparison.java
- *
- *                                      Average Running Times in milliseconds
- *                          | Insert | Quick | Merge Recursive | Merge Iterative | Selection |
- * 10 random                |   25   | 27.66 |      25.33      |      24.66      |   25.33   |
- * 100 random               |  32.33 |  32   |       30        |       29        |    31     |
- * 1000 random              |   61   |  59   |      58.33      |      56.66      |    67     |
- * 1000 few unique          |  54.67 | 51.67 |       48        |       45        |   57.67   |
- * 1000 nearly ordered      |  59.67 | 56.67 |      55.67      |       55        |   67.67   |
- * 1000 reverse order       |  71.67 | 67.67 |      59.33      |      57.33      |   64.67   |
- * 1000 sorted              |   56   | 65.33 |       58        |       56        |   67.67   |
- *
- * 1. Which of the sorting algorithms does the order of input have an impact on? Why? 
- * 		Insertion Sort and Quicksort.
- *
- * 2. Which algorithm has the biggest difference between the best and worst performance, based
- on the type of input, for the input of size 1000? Why?
- *			Insertion sort.
- *
- * 3. Which algorithm has the best/worst scalability, i.e., the difference in performance time
- based on the input size? Please consider only input files with random order for this answer.
- *			Selection sort has the biggest difference in performance time based on input size.
- *
- * 4. Did you observe any difference between iterative and recursive implementations of merge
- sort?
- *			The iterative implementation has a shorter average running time.
- *
- * 5. Which algorithm is the fastest for each of the 7 input files?
- * 			The Merge Iterative
- *
- *
- *  @author zach meade
- *  @version HT 2019
- */
 @RunWith(JUnit4.class)
 public class sortComparisonTest
 {

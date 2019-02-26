@@ -1,5 +1,39 @@
 // -------------------------------------------------------------------------
-
+/**
+ *  Test class for SortComparison.java
+ *
+ *                                      Average Running Times in nanoSeconds
+ *                          | Selection | Insert | Merge Recursive | Merge Iterative |   Quick   |
+ * 10 random                | 0.00521699|0.006031|0.013175         |0.050371         |0.010322   |
+ * 100 random               | 0.11669099|0.119831|0.0636299        |0.05822799       |0.030222   |
+ * 1000 random              | 5.782883  |7.994707|0.546095         |1.242688         |0.547064   |
+ * 1000 few unique          | 2.268436  |2.422701|0.10738199       |0.15132099       |0.08262499 |
+ * 1000 nearly ordered      | 1.81323599|1.163818|0.07087199       |0.101463         |0.05148399 |
+ * 1000 reverse order       | 0.717679  |0.413167|0.077947         |0.10166599       |0.041323   |
+ * 1000 sorted              | 0.501154  |0.351057|0.061965         |0.099032         |0.077559   |
+ *
+ * 1. Which of the sorting algorithms does the order of input have an impact on? Why?
+ * 		Insertion Sort and Quicksort.
+ *
+ * 2. Which algorithm has the biggest difference between the best and worst performance, based
+ on the type of input, for the input of size 1000? Why?
+ *			Insertion sort.
+ *
+ * 3. Which algorithm has the best/worst scalability, i.e., the difference in performance time
+ based on the input size? Please consider only input files with random order for this answer.
+ *			Selection sort has the biggest difference in performance time based on input size.
+ *
+ * 4. Did you observe any difference between iterative and recursive implementations of merge
+ sort?
+ *			The iterative implementation has a shorter average running time.
+ *
+ * 5. Which algorithm is the fastest for each of the 7 input files?
+ * 			The Merge Iterative
+ *
+ *
+ *  @author zach meade
+ *
+ */
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -40,41 +74,44 @@ class SortComparison {
     /**
      * Sorts an array of doubles using Quick Sort.
      * This method is static, thus it can be called as SortComparison.sort(a)
-     * @param numbers: An unsorted array of doubles.
+     * @param a: An unsorted array of doubles.
      * @return array sorted in ascending order
      *
      */
-//        public void quickSort(double[] numbers) {
-//        recursiveQuick(numbers, 0, numbers.length-1);
-//    }
-//    public void recursiveQuick(double[] numbers, int lo, int hi) {
-//        if(hi <= lo) {
-//            return;
-//        }
-//        int pivotPos = partition(numbers, lo, hi);
-//        recursiveQuick(numbers, lo, pivotPos-1);
-//        recursiveQuick(numbers, pivotPos+1, hi);
-//    }
-//    static int partition(double[] numbers, int lo, int hi) {
-//        int i = lo;
-//        int j = hi+1;
-//        Comparable pivot = numbers[lo];
-//        while(true) {
-//            while((numbers[++i].equa(pivot) < 0)) {
-//                if(i == hi) break;
-//            }
-//            while((pivot.compareTo(numbers[--j]) < 0)) {
-//                if(j == lo) break;
-//            }
-//            if(i >= j) break;
-//            Comparable temp = numbers[i];
-//            numbers[i] = numbers[j];
-//            numbers[j] = temp;
-//        }
-//        numbers[lo] = numbers[j];
-//        numbers[j] = pivot;
-//        return j;
-//    }
+    static double [] quickSort (double a[]) {
+        recursiveQuickSort(a, 0, a.length-1);
+        return a;
+    }
+
+    private static void recursiveQuickSort(double a[], int low, int high) {
+        if (high <= low) {
+            return;
+        }
+        int pivotIndex = partition(a, low, high);
+        recursiveQuickSort(a, low, pivotIndex-1);
+        recursiveQuickSort(a, pivotIndex+1, high);
+    }
+
+    private static int partition(double a[], int low, int high) {
+        int i = low;
+        int j = high+1;
+        double pivot = a[low];
+        while (true) {
+            while (a[++i] < pivot) {
+                if (i == high) break;
+            }
+            while (a[--j] > pivot) {
+                if (j == low) break;
+            }
+            if (i >= j) break;
+            double temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+        a[low] = a[j];
+        a[j] = pivot;
+        return j;
+    }
     /**
      * Sorts an array of doubles using Merge Sort.
      * This method is static, thus it can be called as SortComparison.sort(a)
@@ -90,112 +127,53 @@ class SortComparison {
      * @return after the method returns, the array must be in ascending sorted order.
      */
 
-    static double[] mergeSortIterative(double a[]) {
-
-
-        for (int size = 1; size <= a.length - 1; size = 2 * size) {
-
-            for (int left_edge = 0; left_edge < a.length - 1; left_edge += 2 * size) {
-
-                int mid = left_edge + size - 1;
-
-                int right_end = Math.min(left_edge + 2 * size - 1, a.length - 1);
-                merge(a, left_edge, mid, right_end);
+    static double[] mergeSortIterative (double a[]) {
+        int length = a.length;
+        double[] aux = new double[length];
+        for (int i = 1; i < length; i = i + i) {
+            for (int low = 0; low < length - i; low += i + i) {
+                merge(a, aux, low, low+i-1, Math.min(low+i+i-1,length-1));
             }
         }
         return a;
-        //todo: implement the sort
-    }//end mergesortIterative
 
-    static void merge(double a[], double left_edge, double mid, double right_edge) {
-        int i, j, k;
-        double leftSubSize = mid - left_edge + 1;
-        double rightSubSize = right_edge - mid;
-        double leftSub[] = new double[(int) leftSubSize];
-        double rightSub[] = new double[(int) rightSubSize];
+    }//end mergeSortIterative
 
-        for (i = 0; i < leftSubSize; i++) {
-            leftSub[i] = a[(int) (left_edge + i)];
+    static double[] mergeSortRecursive (double a[]) {
+        double[] aux = new double[a.length];
+        sort(a, aux, 0, a.length-1);
+        return a;
+
+    }
+
+    private static void sort(double[] a, double[] aux, int low, int high) {
+        if (high <= low) {
+            return;
         }
-        for (j = 0; j < rightSubSize; j++) {
-            rightSub[j] = a[(int) (mid + 1 + j)];
+        int mid = low + (high - low) / 2;
+        sort(a, aux, low, mid);
+        sort(a, aux, mid+1, high);
+        merge(a, aux, low, mid, high);
+    }
+
+    private static void merge(double[] a, double[] aux, int low, int mid, int high) {
+        //copy
+        for (int k = low; k <= high; k++) {
+            aux[k] = a[k];
         }
-        i = 0;
-        j = 0;
-        k = (int) left_edge;
-        while (i < leftSubSize && j < rightSubSize) {
-            if (leftSub[i] <= rightSub[j]) {
-                a[k] = leftSub[i];
-                i++;
-            } else {
-                a[k] = rightSub[j];
-                j++;
-            }
-            k++;
-        }
-        while (i < leftSubSize) {
-            a[k] = leftSub[i];
-            i++;
-            k++;
-        }
-        while (j < rightSubSize) {
-            a[k] = rightSub[j];
-            j++;
-            k++;
+
+        //merge
+        int i = low, j = mid+1;
+        for (int k = low; k <= high; k++) {
+            if      (i > mid)           a[k] = aux[j++];
+            else if (j > high)          a[k] = aux[i++];
+            else if (aux[j] < aux[i])   a[k] = aux[j++];
+            else                        a[k] = aux[i++];
         }
     }
 
 
-    /**
-     * Sorts an array of doubles using recursive implementation of Merge Sort.
-     * This method is static, thus it can be called as SortComparison.sort(a)
-     *
-     * @param a: An unsorted array of doubles.
-     * @return after the method returns, the array must be in ascending sorted order.
-     */
-    static double[] mergeSortRecursive(double a[]) {
-        if (a.length > 1) {
-            int mid = a.length / 2;
-            double[] leftSub = new double[mid];
-            double[] rightSub = new double[a.length - mid];
-            for (int i = 0; i < mid; i++) {
-                leftSub[i] = a[i];
-            }
-            for (int i = mid; i < a.length; i++) {
-                rightSub[i - mid] = a[i];
-            }
-            mergeSortRecursive(leftSub);
-            mergeSortRecursive(rightSub);
 
-            int i = 0;
-            int j = 0;
-            int k = 0;
-
-            while (i < leftSub.length && j < rightSub.length) {
-                if (leftSub[i] < rightSub[j]) {
-                    a[k] = leftSub[i];
-                    i++;
-                } else {
-                    a[k] = rightSub[j];
-                    j++;
-                }
-                k++;
-            }
-            while (i < leftSub.length) {
-                a[k] = leftSub[i];
-                i++;
-                k++;
-            }
-            while (j < rightSub.length) {
-                a[k] = rightSub[j];
-                j++;
-                k++;
-            }
-        }
-        return a;
-
-
-    }//end mergeSortRecursive
 
 
     /**
@@ -242,7 +220,7 @@ class SortComparison {
         fileArray[5] = new File("src/inputFiles/numbersReverse1000.txt");
         fileArray[6] = new File("src/inputFiles/numbersSorted1000.txt");
         for (int i = 0; i<3;i++) {
-            System.out.println("Set Off Results "+i+"\n\n\n\n");
+            System.out.println("\n\n Set Off Results "+(i+1)+"\n\n");
             numbers10 = fileRead(fileArray[0], 10);
             numbers100 = fileRead(fileArray[1], 100);
             numbers1000 = fileRead(fileArray[2], 1000);
@@ -250,7 +228,20 @@ class SortComparison {
             numbersNearlyOrdered1000 = fileRead(fileArray[4], 1000);
             numbersReverse1000 = fileRead(fileArray[5], 1000);
             numbersSorted1000 = fileRead(fileArray[6], 1000);
+            System.out.println("\nSorts using numbers10 \n ");
             printTimes(numbers10);
+            System.out.println("\nSorts using numbers100 \n ");
+            printTimes(numbers100);
+            System.out.println("\nSorts using numbers1000 \n ");
+            printTimes(numbers1000);
+            System.out.println("\nSorts using numbers1000Duplicates \n ");
+            printTimes(numbers1000Duplicates);
+            System.out.println("\nSorts using numbersNearlyOrdered1000 \n ");
+            printTimes(numbersNearlyOrdered1000);
+            System.out.println("\nSorts using numbersReverse1000 \n ");
+            printTimes(numbersReverse1000);
+            System.out.println("\nSorts using numbersSorted1000 \n ");
+            printTimes(numbersSorted1000);
         }
 
     }
@@ -288,34 +279,34 @@ class SortComparison {
         selectionSort(a);
         long endTime = System.nanoTime();
         long total = endTime-startTime;
-        System.out.println("Selection Sort = "+total +"\n" );
+        System.out.println("Selection Sort = "+total);
 
 
         startTime = System.nanoTime();
         insertionSort(a);
         endTime = System.nanoTime();
         total = endTime-startTime;
-        System.out.println("Insertion Sort = "+total +"\n" );
+        System.out.println("Insertion Sort = "+total);
 
 
         startTime = System.nanoTime();
         mergeSortRecursive(a);
         endTime = System.nanoTime();
         total = endTime-startTime;
-        System.out.println("mergeRecursive Sort = "+total +"\n" );
+        System.out.println("mergeRecursive Sort = "+total);
 
 
         startTime = System.nanoTime();
         mergeSortIterative(a);
         endTime = System.nanoTime();
         total = endTime-startTime;
-        System.out.println("mergeIterative Sort = "+total +"\n" );
+        System.out.println("mergeIterative Sort = "+total );
 
-//        startTime = System.nanoTime();
-//        quickSort(a);
-//        endTime = System.nanoTime();
-//        total = endTime-startTime;
-//        System.out.println("quick Sort = "+total +"\n" );
+        startTime = System.nanoTime();
+        quickSort(a);
+        endTime = System.nanoTime();
+        total = endTime-startTime;
+        System.out.println("quick Sort = "+total );
 
     }
 }
