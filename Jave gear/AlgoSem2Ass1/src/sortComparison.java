@@ -7,31 +7,39 @@
  * 10 random                | 0.00521699|0.006031|0.013175         |0.050371         |0.010322   |
  * 100 random               | 0.11669099|0.119831|0.0636299        |0.05822799       |0.030222   |
  * 1000 random              | 5.782883  |7.994707|0.546095         |1.242688         |0.547064   |
- * 1000 few unique          | 2.268436  |2.422701|0.10738199       |0.15132099       |0.08262499 |
+ * 1000 with Duplicates     | 2.268436  |2.422701|0.10738199       |0.15132099       |0.08262499 |
  * 1000 nearly ordered      | 1.81323599|1.163818|0.07087199       |0.101463         |0.05148399 |
  * 1000 reverse order       | 0.717679  |0.413167|0.077947         |0.10166599       |0.041323   |
  * 1000 sorted              | 0.501154  |0.351057|0.061965         |0.099032         |0.077559   |
  *
  * 1. Which of the sorting algorithms does the order of input have an impact on? Why?
- * 		Insertion Sort and Quicksort.
+ * 	The order of the data has an impact on the quicksort algorithm due to the position of the pivot for the sorting.
  *
  * 2. Which algorithm has the biggest difference between the best and worst performance, based
  on the type of input, for the input of size 1000? Why?
- *			Insertion sort.
+        The the insertion sort has a best case running time of 0(n) and
+        a worst case of 0(n^2)
+ *
  *
  * 3. Which algorithm has the best/worst scalability, i.e., the difference in performance time
  based on the input size? Please consider only input files with random order for this answer.
- *			Selection sort has the biggest difference in performance time based on input size.
+ *
+ *   From my results both of the mergesort algorithms have the best scalability based on input size. This is
+ *   because as input size increases the time taken does not increase by much.
  *
  * 4. Did you observe any difference between iterative and recursive implementations of merge
  sort?
- *			The iterative implementation has a shorter average running time.
+ *      From my results the recursive implementation of the mergesort algorithm appears to perform better than
+ *     the iterative implementation.
  *
  * 5. Which algorithm is the fastest for each of the 7 input files?
- * 			The Merge Iterative
- *
- *
- *  @author zach meade
+ *    random10 works best with selection sort
+ *    random100 works best with quick
+ *    random1000 works best with merge recursive
+ *    1000dups  works best with quick
+ *    1000nearly ordered   works best with quick
+ *    1000 reversed works best with quick
+ *    1000 sorted   works best with merge recursive
  *
  */
 import java.io.BufferedReader;
@@ -42,7 +50,7 @@ import java.io.FileReader;
  *  This class contains static methods that implementing sorting of an array of numbers
  *  using different sort algorithms.
  *
- *  @author
+ *  @author Zach Meade
  *  @version HT 2019
  */
 
