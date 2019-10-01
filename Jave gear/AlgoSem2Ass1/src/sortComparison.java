@@ -210,7 +210,7 @@ class SortComparison {
         return arr;
     }//end selectionsort
 
-
+/*
     public static void main(String[] args) {
         double numbers10[];
         double numbers100[];
@@ -255,7 +255,7 @@ class SortComparison {
     }
 
     //todo: do experiments as per assignment instructions
-
+*/
     public static String toString(double[] a) {
         String result = "";
         for (int i = 0; i< a.length; i++){
@@ -268,54 +268,55 @@ class SortComparison {
         }
         return result;
     }
-    public static double[] fileRead(File file, int size){
-        double[] a = new double[size];
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            int count = 0;
-            String st;
-            while ((st = br.readLine()) != null)
-
-                a[count] = Double.parseDouble(st);
-        } catch (Exception e) {
-            System.err.println("Error: " + e.getMessage());
-        }//try-catch
-        return a;
-    }
-    public static void printTimes(double a[]){
-        long startTime = System.nanoTime();
-        selectionSort(a);
-        long endTime = System.nanoTime();
-        long total = endTime-startTime;
-        System.out.println("Selection Sort = "+total);
-
-
-        startTime = System.nanoTime();
-        insertionSort(a);
-        endTime = System.nanoTime();
-        total = endTime-startTime;
-        System.out.println("Insertion Sort = "+total);
-
-
-        startTime = System.nanoTime();
-        mergeSortRecursive(a);
-        endTime = System.nanoTime();
-        total = endTime-startTime;
-        System.out.println("mergeRecursive Sort = "+total);
-
-
-        startTime = System.nanoTime();
-        mergeSortIterative(a);
-        endTime = System.nanoTime();
-        total = endTime-startTime;
-        System.out.println("mergeIterative Sort = "+total );
-
-        startTime = System.nanoTime();
-        quickSort(a);
-        endTime = System.nanoTime();
-        total = endTime-startTime;
-        System.out.println("quick Sort = "+total );
-
-    }
+//
+//    public static double[] fileRead(File file, int size){
+//        double[] a = new double[size];
+//        try {
+//            BufferedReader br = new BufferedReader(new FileReader(file));
+//            int count = 0;
+//            String st;
+//            while ((st = br.readLine()) != null)
+//
+//                a[count] = Double.parseDouble(st);
+//        } catch (Exception e) {
+//            System.err.println("Error: " + e.getMessage());
+//        }//try-catch
+//        return a;
+//    }
+//    public static void printTimes(double a[]){
+//        long startTime = System.nanoTime();
+//        selectionSort(a);
+//        long endTime = System.nanoTime();
+//        long total = endTime-startTime;
+//        System.out.println("Selection Sort = "+total);
+//
+//
+//        startTime = System.nanoTime();
+//        insertionSort(a);
+//        endTime = System.nanoTime();
+//        total = endTime-startTime;
+//        System.out.println("Insertion Sort = "+total);
+//
+//
+//        startTime = System.nanoTime();
+//        mergeSortRecursive(a);
+//        endTime = System.nanoTime();
+//        total = endTime-startTime;
+//        System.out.println("mergeRecursive Sort = "+total);
+//
+//
+//        startTime = System.nanoTime();
+//        mergeSortIterative(a);
+//        endTime = System.nanoTime();
+//        total = endTime-startTime;
+//        System.out.println("mergeIterative Sort = "+total );
+//
+//        startTime = System.nanoTime();
+//        quickSort(a);
+//        endTime = System.nanoTime();
+//        total = endTime-startTime;
+//        System.out.println("quick Sort = "+total );
+//
+//    }
 }
 //end class
