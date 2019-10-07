@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d9c2cb-5935-499c-855d-a38566edc4b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/out/production/AlgoSem2Ass1/ass2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/ass2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/github uploads.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sem2Ass1.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/out/production/AlgoSem2Ass1/SortComparison.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/out/production/AlgoSem2Ass1/SortComparison.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/out/production/AlgoSem2Ass1/sortComparisonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/out/production/AlgoSem2Ass1/sortComparisonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sortComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sortComparison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sortComparisonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sortComparisonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +16,7 @@
     <session id="330581996">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -32,24 +24,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="4" />
           <entry key="txt" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="4" />
           <entry key="PLAIN_TEXT" value="68" />
         </counts>
       </usages-collector>
@@ -57,14 +49,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="-687">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#2886#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sortComparison.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4227">
+              <folding>
+                <element signature="e#0#11536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +132,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569934926221" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570454462016" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -145,6 +148,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="BT_NoParentPtr_Solution1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BT_NoParentPtr_Solution1" />
+      <module name="Cs3012" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BT_NoParentPtr_Solution1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -155,15 +172,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569934651680</updated>
-      <workItem from="1569934654289" duration="266000" />
+      <workItem from="1569934654289" duration="951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266000" />
+    <option name="totallyTimeSpent" value="951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -172,6 +190,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
@@ -214,11 +233,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="-687">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#2886#0" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Jave gear/AlgoSem2Ass1/src/sortComparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4227">
+          <folding>
+            <element signature="e#0#11536#0" expanded="true" />
           </folding>
         </state>
       </provider>
