@@ -37,6 +37,23 @@ public class LeastCommonAncestorTest {
         assertSame(test.search(test.root,19,9).key,9);
         assertSame(test.search(test.root,14,16).key,15);
     }
+    @Test // test when left or right are not in the tree
+    public void testNotInTree()
+    {
+
+        LeastCommonAncestor<Integer> test = new LeastCommonAncestor<Integer>();
+        test.put(9);
+        test.put(1);
+        test.put(4);
+        test.put(19);
+        test.put(9);
+        test.put(13);
+        assertNull(test.search(test.root,19,3));
+        assertNull(test.search(test.root,1,20));
+        assertNull(test.search(test.root,5,3));
+        assertNull(test.search(test.root,5,5));
+        assertNull(test.search(test.root,20,1));
+    }
 
 
 }
