@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d9c2cb-5935-499c-855d-a38566edc4b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DagLCA/src/DagLCA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DagLCA/src/DagLCATest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DagLCA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DagLCA/DagLCA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/DagLCA.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +78,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="1245">
               <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,7 +122,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
@@ -157,7 +159,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571139117029" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571254096125" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -234,7 +236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569934651680</updated>
       <workItem from="1569934654289" duration="951000" />
-      <workItem from="1570454444561" duration="4253000" />
+      <workItem from="1570454444561" duration="4452000" />
     </task>
     <servers />
   </component>
@@ -259,10 +261,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5204000" />
+    <option name="totallyTimeSpent" value="5403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="825" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
@@ -343,7 +345,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="1245">
           <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
