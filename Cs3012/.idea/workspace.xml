@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d9c2cb-5935-499c-855d-a38566edc4b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DagLCA/src/DagLCATest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DagLCA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DagLCA/DagLCA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/DagLCA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DagLCA/src/DagLCATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/src/DagLCATest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +56,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-407">
@@ -75,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
+            <state relative-caret-position="964">
               <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -122,7 +120,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
@@ -159,7 +157,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571254096125" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571307333627" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -236,7 +234,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569934651680</updated>
       <workItem from="1569934654289" duration="951000" />
-      <workItem from="1570454444561" duration="4452000" />
+      <workItem from="1570454444561" duration="4487000" />
     </task>
     <servers />
   </component>
@@ -261,10 +259,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5403000" />
+    <option name="totallyTimeSpent" value="5438000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
@@ -328,6 +326,22 @@
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#206#215#0" expanded="true" />
+            <element signature="e#451#460#0" expanded="true" />
+            <element signature="e#760#769#0" expanded="true" />
+            <element signature="e#1346#1355#0" expanded="true" />
+            <element signature="e#1893#1902#0" expanded="true" />
+            <element signature="e#2260#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-407">
@@ -339,22 +353,6 @@
             <element signature="e#322#323#0" expanded="true" />
             <element signature="e#666#667#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#206#215#0" expanded="true" />
-            <element signature="e#451#460#0" expanded="true" />
-            <element signature="e#760#769#0" expanded="true" />
-            <element signature="e#1346#1355#0" expanded="true" />
-            <element signature="e#1893#1902#0" expanded="true" />
-            <element signature="e#2260#2269#0" expanded="true" />
           </folding>
         </state>
       </provider>
