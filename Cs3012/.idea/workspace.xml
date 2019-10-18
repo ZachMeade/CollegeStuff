@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d9c2cb-5935-499c-855d-a38566edc4b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/LeastCommonAncestorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeastCommonAncestorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DagLCA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DagLCA/src/DagLCATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DagLCA/src/DagLCATest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +14,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Lowest_Common_Ancestor$LeastCommonAncestorTest.ic" NAME="LeastCommonAncestorTest Coverage Results" MODIFIED="1570808495941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="201" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="330581996">
@@ -52,7 +56,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-407">
@@ -69,17 +73,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+            <state relative-caret-position="964">
+              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#206#215#0" expanded="true" />
                 <element signature="e#451#460#0" expanded="true" />
                 <element signature="e#760#769#0" expanded="true" />
                 <element signature="e#1346#1355#0" expanded="true" />
+                <element signature="e#1893#1902#0" expanded="true" />
+                <element signature="e#2260#2269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,7 +157,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570808495556" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571307333627" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -228,7 +234,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569934651680</updated>
       <workItem from="1569934654289" duration="951000" />
-      <workItem from="1570454444561" duration="3462000" />
+      <workItem from="1570454444561" duration="4487000" />
     </task>
     <servers />
   </component>
@@ -242,9 +248,18 @@
     <history-entry file="LeastCommonAncestorTest - 2019.10.07 at 15h 40m 31s.xml">
       <configuration name="LeastCommonAncestorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LeastCommonAncestorTest - 2019.10.11 at 16h 41m 32s.xml">
+      <configuration name="LeastCommonAncestorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeastCommonAncestorTest - 2019.10.11 at 16h 41m 38s.xml">
+      <configuration name="LeastCommonAncestorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeastCommonAncestorTest - 2019.10.11 at 16h 43m 18s.xml">
+      <configuration name="LeastCommonAncestorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4413000" />
+    <option name="totallyTimeSpent" value="5438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
@@ -259,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32957748" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -311,6 +326,22 @@
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#206#215#0" expanded="true" />
+            <element signature="e#451#460#0" expanded="true" />
+            <element signature="e#760#769#0" expanded="true" />
+            <element signature="e#1346#1355#0" expanded="true" />
+            <element signature="e#1893#1902#0" expanded="true" />
+            <element signature="e#2260#2269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-407">
@@ -322,20 +353,6 @@
             <element signature="e#322#323#0" expanded="true" />
             <element signature="e#666#667#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeastCommonAncestorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#206#215#0" expanded="true" />
-            <element signature="e#451#460#0" expanded="true" />
-            <element signature="e#760#769#0" expanded="true" />
-            <element signature="e#1346#1355#0" expanded="true" />
           </folding>
         </state>
       </provider>
